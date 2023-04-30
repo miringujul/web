@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Main</title>
+  <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+</head>
+<body style="background-color: bisque;">
+	<h1>Welcome to my website!</h1>
+	<p>This is the home page of my website. Here you can learn more about what I do and my services.</p>
+	
+ 
+    
+       
+       
+ <div class="tab">
+  <button class="tablinks" onclick="openCity(event, 'Aboutme')">About me</button>
+  <button class="tablinks" onclick="openCity(event, 'contact')">Contact</button>
+  <button class="tablinks" onclick="openCity(event, 'more')">more</button>
+</div>
+
+<div id="Aboutme" class="tabcontent">
+  
+  <a href="About.html" target="_blank">Click to find out more</a>
+</div>
+
+<div id="contact" class="tabcontent">
+  <p>Email :contact@gmail.com</p> 
+</div>
+
+<div id="more" class="tabcontent">
+    <p>Find me at:P.O.Box 65550,Afya center,3rd floor,Nairobi.</p>
+</div>
+<style>
+body {font-family: Arial, Helvetica, sans-serif;}
+
+/* Style the tab */
+.tab {
+  overflow: hidden;
+  border: 1px solid #ccc;
+  background-color: #f1f1f1;
+}
+
+/* Style the buttons inside the tab */
+.tab button {
+  background-color: inherit;
+  float: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 14px 16px;
+  transition: 0.3s;
+  font-size: 17px;
+}
+
+/* Change background color of buttons on hover */
+.tab button:hover {
+  background-color: #ddd;
+}
+
+/* Create an active/current tablink class */
+.tab button.active {
+  background-color: #ccc;
+}
+
+/* Style the tab content */
+.tabcontent {
+  display: none;
+  padding: 6px 12px;
+  border: 1px solid #ccc;
+  border-top: none;
+}
+img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+</style>
+<script>
+function openCity(evt, cityName) {
+  var i, tabcontent, tablinks;
+  tabcontent = document.getElementsByClassName("tabcontent");
+  for (i = 0; i < tabcontent.length; i++) {
+    tabcontent[i].style.display = "none";
+  }
+  tablinks = document.getElementsByClassName("tablinks");
+  for (i = 0; i < tablinks.length; i++) {
+    tablinks[i].className = tablinks[i].className.replace(" active", "");
+  }
+  document.getElementById(cityName).style.display = "block";
+  evt.currentTarget.className += " active";
+}
+</script>
+<section>
+    <h3>What is Gis</h3>
+    <p>GIS stands for Geographic Information System. 
+        It is a system designed to capture, store, analyze, manage, and present spatial or geographical data.
+         GIS uses various types of data such as maps, aerial photographs, satellite imagery, and 
+         data from various sensors to generate information that can be used to make informed decisions about specific locations.
+          GIS software allows users to manipulate, analyze, and visualize spatial data in various ways.
+          For example, a GIS can be used to overlay different layers of data to identify relationships between them, 
+          perform spatial analysis to generate new insights, and create maps and visualizations to communicate findings to stakeholders.
+        
+        GIS technology is used in many fields, including environmental management, urban planning, emergency management, natural resource management,
+         and public health. GIS has become an important tool for decision-making in both the public and private sectors because of its ability to
+          provide a more complete and accurate understanding of the geographic context of various phenomena.</p>
+<img src="https://www.caliper.com/graphics/blog-layers-model.jpg" alt="">
+        </section>
+  <section>
+    <h3>Web Mapping</h3>
+    <p>Web mapping refers to the process of using digital maps that are accessed through a web browser. 
+      It allows users to interact with geographic information and display it in a variety of ways, including satellite imagery, street maps, and topographic maps.
+       Web mapping can be used for a variety of purposes, such as navigation, data analysis, and spatial planning.</p>
+  </section> 
+  <section>
+    <p>Some of the capabilities of webmapping are:</p>
+    <ul style="list-style-type: square;">
+      <li>A web Map
+      <ul><a href="https://miringujul.github.io/W2/" target="_blank">-Click to see a sample</a></ul>
+      </li>
+      <li>A storymap
+        <ul><a href="https://miringujul.github.io/SM/" target="_blank"> -Click to see a sample</a></ul>
+      </li>
+     
+    </ul>
+  </section>     
+
+<p>For suggestions,leave your contact information and we will contact you.</p>
+<form >
+    <label for="fname">First name:</label><br>
+    <input type="text" id="fname" name="fname" ><br>
+    <label for="lname">Last name:</label><br>
+    <input type="text" id="lname" name="lname" ><br><br>
+    <input type="submit" value="Submit">
+  </form> 
+
+</body>
+</html> 
+
+
